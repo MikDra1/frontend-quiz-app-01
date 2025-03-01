@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import AppLayout from "./pages/AppLayout";
@@ -52,7 +52,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path=":category/:id" element={<Question />} />
             <Route path="/summary/:category" element={<Summary />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>
       </BrowserRouter>
