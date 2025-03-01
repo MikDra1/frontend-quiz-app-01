@@ -7,7 +7,7 @@ const ProjectContext = createContext();
 function ProjectProvider({ children }) {
   const [isMobile, setIsMobile] = useState(null);
   const [isTablet, setIsTablet] = useState(null);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const screenSize = useScreenSize();
 
   useEffect(
