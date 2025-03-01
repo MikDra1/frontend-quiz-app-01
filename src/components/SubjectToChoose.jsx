@@ -5,10 +5,11 @@ const StyledSubjectToChoose = styled.div`
   display: flex;
   align-items: center;
   background-color: var(--white);
-  padding: 1rem;
+  padding: 1.25rem;
   gap: 2rem;
   border-radius: 1.5rem;
   cursor: pointer;
+
 `;
 
 const Title = styled.h2`

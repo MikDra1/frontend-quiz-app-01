@@ -35,7 +35,7 @@ const Subtitle = styled.p`
 const SubjectToChooseContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 
   @media (max-width: 1200px) {
     margin-bottom: 3rem;
